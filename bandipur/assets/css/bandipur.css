@@ -133,7 +133,7 @@ h2 {
 }
 
 .product {
-  background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(../img/leafs.png) left bottom no-repeat;
+  background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(/bandipur/assets/image/leafs.png) left bottom no-repeat;
   background-size: auto;
 }
 
@@ -278,7 +278,7 @@ h2 {
 
 /*** Testimonial ***/
 .testimonial {
-  background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(/img/leafs2.jpg) center center no-repeat;
+  background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(/bandipur/assets/image/leafs2.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -323,7 +323,7 @@ h2 {
 /*** Reviews ***/
 
 .testimonial-review {
-  background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(/img/leafs.png) left bottom no-repeat;
+  background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(/bandipur/assets/image/leafs.png) left bottom no-repeat;
   background-size: auto;
 }
 
