@@ -30,6 +30,33 @@ h2 {
   font-size: 25px;
 }
 
+.callto-action {
+  background-image: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url('/home/karthik/Jaguar-homestay/bandipur/assets/image/leafs.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 90px 0;
+}
+
+.call-content h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.call-content a {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 2px solid white;
+  color: white;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -133,7 +160,7 @@ h2 {
 }
 
 .product {
-  background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(/bandipur/assets/image/leafs.png) left bottom no-repeat;
+  background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url('/home/karthik/Jaguar-homestay/bandipur/assets/image/leafs.png') left bottom no-repeat;
   background-size: auto;
 }
 
@@ -166,81 +193,40 @@ h2 {
 }
 
 
+/* About us section styles */
+.aboutus-img img{
+  width: 300px;
+  height: 200px;
+}
 
-
-/*** About ***/
-.btn-play {
+#aboutus-bg{
+  background: rgb(4, 87, 76);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  display: block;
-  box-sizing: content-box;
-  width: 65px;
-  height: 75px;
-  border-radius: 100%;
-  border: none;
-  outline: none !important;
-  padding: 28px 30px 30px 38px;
-  background: #FFFFFF;
+  background-position: center;
+  color: wheat;
+  margin-top: 30px;
 }
 
-.btn-play:before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  display: block;
-  width: 120px;
-  height: 120px;
-  background: #FFFFFF;
-  border-radius: 100%;
-  animation: pulse-border 1500ms ease-out infinite;
-}
+/* End of About us section */
 
-.btn-play:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  display: block;
-  width: 120px;
-  height: 120px;
-  background: #FFFFFF;
-  border-radius: 100%;
-  transition: all 200ms;
-}
 
-.btn-play span {
-  display: block;
+/* About room section start */
+
+#Room-section{
+  background: rgb(2, 95, 72);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  z-index: 3;
-  width: 0;
-  height: 0;
-  left: 13px;
-  border-left: 40px solid var(--primary);
-  border-top: 28px solid transparent;
-  border-bottom: 28px solid transparent;
+  background-position: center;
+  
 }
 
-@keyframes pulse-border {
-  0% {
-      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-      opacity: 1;
-  }
 
-  100% {
-      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
-      opacity: 0;
-  }
-}
+
 
 /*** Store ***/
-.img-fluid {
-  border-radius: 20px;
-}
-
 .mb-3 {
   color: #88B44E;
 }
@@ -261,10 +247,15 @@ h2 {
   transition: .5s;
 }
 
-.store-item:hover .store-overlay {
+/* .store-item:hover .store-overlay {
   opacity: 1;
-}
+} */
 
+
+.store-item img{
+  width: 350px;
+  height: 220px;
+}
 
 /*** Contact ***/
 .contact .btn-square {
@@ -278,7 +269,7 @@ h2 {
 
 /*** Testimonial ***/
 .testimonial {
-  background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(/bandipur/assets/image/leafs2.jpg) center center no-repeat;
+  background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url('/home/karthik/Jaguar-homestay/bandipur/assets/image/leafs2.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -323,7 +314,7 @@ h2 {
 /*** Reviews ***/
 
 .testimonial-review {
-  background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(/bandipur/assets/image/leafs.png) left bottom no-repeat;
+  background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url('/home/karthik/Jaguar-homestay/bandipur/assets/image/leafs.png') left bottom no-repeat;
   background-size: auto;
 }
 
@@ -492,25 +483,25 @@ header .parallax div {
 }
 }
 header .parallax .one {
-background-image: url("https://tornis.robbowen.digital/img/mist.png");
+background-image: url('/home/karthik/Jaguar-homestay/bandipur/assets/image/mist.png');
 z-index: 4;
 animation: side 25s linear infinite;
 }
 header .parallax .two {
-background-image: url("https://tornis.robbowen.digital/img/tree_top.png");
+background-image: url('/home/karthik/Jaguar-homestay/bandipur/assets/image/tree_top.png');
 z-index: 3;
 }
 header .parallax .three {
-background-image: url("https://tornis.robbowen.digital/img/mist.png");
+background-image: url('/home/karthik/Jaguar-homestay/bandipur/assets/image/mist.png');
 z-index: 2;
 animation: side 25s linear 5s infinite;
 }
 header .parallax .four {
-background-image: url("https://tornis.robbowen.digital/img/tree_mid.png");
+background-image: url('/home/karthik/Jaguar-homestay/bandipur/assets/image/tree_mid.png');
 z-index: 1;
 }
 header .parallax .five {
-background-image: url("https://tornis.robbowen.digital/img/tree_base.jpg");
+background-image: url('/home/karthik/Jaguar-homestay/bandipur/assets/image/tree_base.jpg');
 z-index: 0;
 }
 
@@ -523,6 +514,235 @@ z-index: 0;
 }
 }
 
-.map {
+
+.contact-button a{
+  width: 150px;
+  height: 40px;
+}
+.caru-section {
+  padding: 5rem 0;
+  background-image: url('/home/karthik/Jaguar-homestay/bandipur/assets/image/tree_top.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  color: white;
+
+}
+
+.caru-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  /* background-color: rgba(119, 241, 103, 0.7); */
+}
+
+.event-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.15);
+}
+
+.image-title h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.image-title span {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+}
+.custom-span{
+  color: black;
+}
+
+
+
+.carousel-indicators button {
+  background: rgba(255, 255, 255, 0.7) !important;
+  width: 15px !important;
+  height: 6px !important;
+  border-radius: 50%;
+  border-top: none !important;
+}
+
+.carousel-indicators .active {
+  background: white !important;
+}
+
+.carousel-indicators {
+  position: absolute;
+  content: "";
+  bottom: -60px !important;
+}
+
+.star-icon {
+  margin-right: 15px;
+}
+
+.star-icon li {
+  list-style: none;
+}
+
+.star-icon li i {
+  color: #cea135;
+}
+
+.discrip-sec span {
+  color: white;
+  font-style: italic;
+  font-weight: 400;
+
+}
+
+
+/* why us */
+.why-us .why-box {
+  padding: 30px;
+  background: #CE1212;
+  color: #fff;
+}
+
+.why-us .why-box h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .why-box p {
+  margin-bottom: 30px;
+}
+
+.why-us .why-box .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.why-us .why-box .more-btn i {
+  font-size: 14px;
+}
+
+.why-us .why-box .more-btn:hover {
+  color: var(--color-primary);
+  background: #fff;
+}
+
+.why-us .icon-box {
+  text-align: center;
+  background: #fff;
+  padding: 40px 30px;
   width: 100%;
+  height: 100%;
+  border: 1px solid rgba(55, 55, 63, 0.1);
+  transition: 0.3s;
+}
+
+.why-us .icon-box i {
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  font-size: 32px;
+  margin-bottom: 30px;
+  background: rgba(206, 18, 18, 0.1);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+
+.why-us .icon-box h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  font-family: var(--font-secondary);
+}
+
+.why-us .icon-box p {
+  font-size: 15px;
+  color: #6c757d;
+}
+
+@media (min-width: 1200px) {
+  .why-us .icon-box:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+/* Safari booking styles */
+
+
+.safari-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: rgb(3, 3, 61);
+}
+
+.safari-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #19335c;
+}
+
+.safari-image img{
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #454035;
+  border-bottom: 3px solid #454035;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+#gallery{
+  margin-top: 5rem;
+}
+
+.section-title1{
+  font-size: 30px;
+}
+
+.section-title1 h2{
+  font-size: 60px;
+}
+
+
+/* map Content Section */
+
+#Map-section{
+  margin-top: 40px;
+}
+
+.map-content{
+  text-align: center;
+  padding-bottom: 2rem;
 }
