@@ -1,0 +1,732 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ body {
+  font-family: 'Droid Sans';font-size: 22px;
+ }
+
+
+ /***************************************************
+ All Section Headings styles  
+ ***************************************************/
+ section {
+     padding: 60px 0;
+ }
+
+ .section-bg {
+     background-color: white;
+ }
+
+ .section-title {
+     text-align: center;
+     padding-bottom: 30px;
+ }
+
+ .section-title h2 {
+     margin: 15px 0 0 0;
+     font-size: 32px;
+     font-weight: 700;
+     color: #14e18c;
+     font-family: Satisfy, 'Times New Roman', Times, serif;
+ }
+
+ .section-title h2 span {
+     color: #ffb03b;
+ }
+
+ .section-title p {
+     margin: 15px auto 0 auto;
+     font-weight: 800;
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+
+ /***********************************************************  
+ Top Bar Section Styles
+ ***********************************************************/
+ #topbar-section {
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  z-index: 996;
+  background-color: black;
+}
+
+#topbar-section .contacts-info i {
+  font-style: normal;
+  color: #d9ba85;
+  font-size: 12px;
+}
+
+#topbar-section .location-info{
+  padding-left: 10px;
+}
+
+#topbar-section .contacts-info i span {
+  padding-left: 5px;
+  color: #fff;
+}
+
+#topbar-section .location-info i span{
+  color: #fff;
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+#topbar-section .location-info i {
+  font-style: normal;
+  color: #d9ba85;
+  font-size: 10px;
+}
+
+
+
+ /***************************************************************
+Hero Section Styles
+****************************************************************/
+
+
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #476052;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+header .overlay h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14vw;
+  color: lightblue;
+  mix-blend-mode: screen;
+  opacity: 0.78;
+}
+@media (max-width: 768px) {
+  header .overlay h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-height: 500px) {
+  header .overlay h1 {
+    font-size: 6rem;
+  }
+}
+header .overlay h1 span {
+  display: block;
+  letter-spacing: 5px;
+  font-size: 2vw;
+}
+@media (max-width: 768px) {
+  header .overlay h1 span {
+    font-size: 1.25rem;
+  }
+}
+header .parallax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header .parallax div {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  width: calc(100% + (15px * 2));
+  height: calc(100% + (15px * 2));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 200ms ease;
+}
+@media (max-height: 600px) {
+  header .parallax div {
+    background-size: 100%;
+  }
+}
+header .parallax .one {
+  background-image: url('/Bandipur/assets/image/mist.png');
+  z-index: 4;
+  animation: side 25s linear infinite;
+}
+header .parallax .two {
+  background-image: url('/Bandipur/assets/image/tree_top.png');
+  z-index: 3;
+}
+header .parallax .three {
+  background-image: url('/Bandipur/assets/image/mist.png');
+  z-index: 2;
+  animation: side 25s linear 5s infinite;
+}
+header .parallax .four {
+  background-image: url('/Bandipur/assets/image/tree_mid.png');
+  z-index: 1;
+}
+header .parallax .five {
+  background-image: url('/Bandipur/assets/image/tree_base.jpg');
+  z-index: 0;
+}
+
+@keyframes side {
+  20%, 60%, 100% {
+    transform: translateX(15px);
+  }
+  40%, 80% {
+    transform: translateX(-15px);
+  }
+}
+
+ /******************************************************
+  About Section Styles  
+  *******************************************************/
+
+ #about-section {
+     background:linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url( "../image/about-img/abt-bg.jpg");    
+     background-attachment: fixed;
+     position: relative;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     padding: 80px 0;
+ }
+
+ #about-section .about-content .background {
+     min-height: 300px;
+     margin-bottom: 10px;
+     align-items: center;
+ }
+
+ #about-section .about-content .content {
+     background:transparent;
+ }
+
+ #about-section .about-content .about-title {
+     color: rgb(8, 211, 8);
+     font-weight: 700;
+     font-size: 32px;
+ }
+ 
+ #about-section .about-content p {
+     line-height: 26px;
+ }
+
+ #about-section .about-content p:last-child {
+     margin-bottom: 0;
+ }
+
+ #about-section .about-content .about-box {
+     background: transparent;
+     background-size: cover;
+     padding: 0 0 30px 0;
+ }
+
+
+ #about-section .about-content .about-box .about-title {
+     font-weight: 500;
+     margin-bottom: 5px;
+     font-size: 18px;
+     text-transform: uppercase;
+ }
+
+ #about-section .about-content .about-box .about-title a {
+     color: white;
+ }
+
+
+
+
+ /************************************************************
+ Why us Section styles  
+ *************************************************************/
+
+ #why-us-section{
+    background-color: rgba(0, 0, 0,0.20);
+ }
+
+ .why-us-section .whyus-content {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    background: #1a1814;
+    position: relative;
+    height: 100%;
+  }
+  
+  .why-us-section .whyus-content span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda45e;
+  }
+  
+  .why-us-section .whyus-content h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .why-us-section .whyus-content p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .why-us-section .whyus-content:hover {
+    background: rgb(1, 160, 1);
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  
+  .why-us-section .whyus-content:hover span,
+  .why-us-section .whyus-content:hover h4,
+  .why-us-section .whyus-content:hover p {
+    color: #fff;
+  }
+
+  /***************************************************
+  Customers Reviews Count Section  
+  ***************************************************/
+
+  .review-counts {
+    background-color: #f6f7f6;
+    padding: 25px 0;
+  }
+  
+  .review-counts .review-item {
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .review-counts .review-item span {
+    font-size: 48px;
+    display: block;
+    color: rgb(7, 194, 7);
+    font-weight: 700;
+  }
+  
+  .review-counts .review-item p {
+    color: rgb(6, 180, 6);
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  /**********************************************************
+  We Book safari Section  
+  **********************************************************/
+  .safari-booking{
+    background:linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url( "../image/webook-safari/webook-safariimg.jpg");    
+     background-attachment: fixed;
+     position: relative;
+     background-size: cover;
+     background-repeat: no-repeat;
+     color: white;
+  }
+
+
+  .safari-booking .safari-content h3 {
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(6, 192, 6);
+  }
+
+  .safari-booking .safari-content p{
+    font-size: 20px;
+  }
+  
+
+
+
+  
+/****************************************************************
+Our Services Section Styles And Near by Places To visit Sections
+*****************************************************************/
+.testimonials{
+  background-color:rgba(239, 245, 191,0.2);
+
+}
+
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+} 
+.testimonials .testimonial-item .testimonial-img {
+  /* margin: -40px 0 0 40px; */
+  position: relative;
+  z-index: 2;
+  border: 6px solid #fff;
+  
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 25px;
+  color: rgb(99, 90, 3);
+  margin: 0 0 0 45px;
+  text-align: center;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #ffbbaa;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  position: relative;
+  border-radius: 6px;
+  z-index: 1;
+  text-align: center;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #ff7f5d;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ff7f5d;
+}
+
+
+/********************************************************
+ Whats App And Calling Section Styles 
+ *******************************************************/
+
+.further-details {
+  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../image/Whatsapp-call/whatsapsec-bg.avif") center ;
+  background-size: cover;
+  padding: 100px 0;
+  background-attachment: fixed;
+}
+
+
+.further-details h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.further-details p {
+  color: #fff;
+}
+
+.further-details .contact-btn {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: rgb(5, 201, 5);
+}
+
+.further-details .contact-btn:hover {
+  background: rgb(1, 175, 1);
+  border: 2px solid white;
+}
+
+/********************************************************
+ Homestay Rooms Section Styles 
+ *******************************************************/
+ .room-section .card {
+  border: 1px solid rgba(14, 29, 52, 0.15);
+  background: #fff;
+  position: relative;
+  border-radius: 0;
+  height: 100%;
+}
+
+.room-section{
+  background-color: rgba(0, 200, 0, 0.10);
+}
+
+.room-section .card .card-img {
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+.room-section .card .card-img img {
+  transition: 0.3s ease-in-out;
+}
+
+.room-section .card h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.room-section .card a {
+  color: #001973;
+  transition: 0.3;
+}
+
+.room-section .card a:hover {
+  color: rgb(8, 208, 8);
+}
+
+.room-section .card p {
+  padding: 0 30px;
+  margin-bottom: 30px;
+  color:black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.room-section .card:hover .card-img img {
+  transform: scale(1.1);
+  width: 100%;
+  height: 100%;
+}
+
+
+/**********************************************************
+gallery-section Section Styles  
+***********************************************************/
+.gallery-section {
+  overflow: hidden;
+  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../image/Gallery-imgs/whatsapsec-bg.avif") center ;
+  background-size: cover;
+  
+}
+
+.gallery-section .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.gallery-section .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  opacity: 1;
+}
+
+.gallery-section .swiper-pagination .swiper-pagination-bullet-active {
+  background-color:rgba(216, 174, 6, 0.832);
+}
+
+.gallery-section .swiper-slide-active {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .gallery-section .swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .gallery-section .swiper-slide-active {
+    border: 6px solid black;
+    padding: 4px;
+    background: #fff;
+    z-index: 1;
+    transform: scale(1.2);
+  }
+}
+
+/*******************************************************
+About Bandipur Section styles  
+********************************************************/
+
+.about-bandipur .bandipur-content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #01b62b;
+}
+
+.about-bandipur .bandipur-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-bandipur .bandipur-content ul li {
+  padding-bottom: 10px;
+}
+
+.about-bandipur .bandipur-content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1acc8d;
+}
+
+.about-bandipur .bandipur-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/************************************************************
+Contact us section/Iframe Section Styles  
+*************************************************************/
+
+.contact-section .contact-info-box {
+  color: #0b2341;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+
+.contact-section .contact-info-box i {
+  font-size: 32px;
+  color: #43d604;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fbdad2;
+}
+
+.contact-section .contact-info-box h3 {
+  font-size: 20px;
+  color: #eb610b;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact-section .contact-info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/*************************************************************
+Footer Section Styles  
+*************************************************************/
+#footer-section {
+  background: #0f0f0f;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer-section h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer-section p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer-section .social-media-links {
+  margin: 0 0 40px 0;
+}
+
+#footer-section .social-media-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #009961;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer-section .social-media-links a:hover {
+  background: #00b371;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer-section .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer-section .credits {
+  font-size: 13px;
+}
+
+#footer-section .credits a {
+  color: #00b371;
+  transition: 0.3s;
+}
+
+#footer-section .credits a:hover {
+  color: #009961;
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+ 
