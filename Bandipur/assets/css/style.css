@@ -161,25 +161,25 @@ header .parallax div {
   }
 }
 header .parallax .one {
-  background-image: url('/Bandipur/assets/image/mist.png');
+  background-image: url("../image/about-img/mist.png");
   z-index: 4;
   animation: side 25s linear infinite;
 }
 header .parallax .two {
-  background-image: url('/Bandipur/assets/image/tree_top.png');
+  background-image: url("../image/about-img/tree_top.png");
   z-index: 3;
 }
 header .parallax .three {
-  background-image: url('/Bandipur/assets/image/mist.png');
+  background-image: url("../image/about-img//mist.png");
   z-index: 2;
   animation: side 25s linear 5s infinite;
 }
 header .parallax .four {
-  background-image: url('/Bandipur/assets/image/tree_mid.png');
+  background-image: url("../image/about-img/tree_mid.png");
   z-index: 1;
 }
 header .parallax .five {
-  background-image: url('/Bandipur/assets/image/tree_base.jpg');
+  background-image: url("../image/about-img/tree_base.jpg");
   z-index: 0;
 }
 
@@ -544,7 +544,7 @@ gallery-section Section Styles
 ***********************************************************/
 .gallery-section {
   overflow: hidden;
-  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../image/Gallery-imgs/whatsapsec-bg.avif") center ;
+  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../image/Whatsapp-call/whatsapsec-bg.avif") center ;
   background-size: cover;
   
 }
